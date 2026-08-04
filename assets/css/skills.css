@@ -40,6 +40,8 @@
 
 .skill-card::before{
 
+    pointer-events:none;
+
     content:"";
 
     position:absolute;

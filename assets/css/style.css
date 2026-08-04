@@ -102,6 +102,12 @@ section {
   font-weight: 600;
 
   transition: 0.3s;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
 }
 
 .btn-primary {
@@ -122,4 +128,10 @@ section {
 
 .btn-secondary:hover {
   background: var(--primary);
+}
+
+.btn i{
+
+    font-size:1rem;
+
 }
