@@ -9,9 +9,22 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/animations.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -29,11 +42,31 @@
         <a class="logo" href="#"> &lt;Martim /&gt; </a>
 
         <ul class="nav-links">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Competências</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#experience">Experiência</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li>
+            <a href="#about"><i class="fa-regular fa-user"></i> Sobre</a>
+          </li>
+
+          <li>
+            <a href="#skills"><i class="fa-solid fa-code"></i> Competências</a>
+          </li>
+
+          <li>
+            <a href="#projects"
+              ><i class="fa-solid fa-folder-open"></i> Projetos</a
+            >
+          </li>
+
+          <li>
+            <a href="#experience"
+              ><i class="fa-solid fa-briefcase"></i> Experiência</a
+            >
+          </li>
+
+          <li>
+            <a href="#contact"
+              ><i class="fa-regular fa-envelope"></i> Contacto</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -57,23 +90,23 @@
             </p>
 
             <div class="hero-tech">
+              <span>C#</span>
               <span>Angular</span>
               <span>Spring Boot</span>
               <span>TypeScript</span>
-              <span>Java</span>
               <span>Godot</span>
             </div>
 
             <div class="hero-buttons">
               <a
                 href="assets/files/CV_Martim_Mendes_Simoes.pdf"
-                class="btn primary"
+                class="btn btn-primary"
                 target="_blank"
               >
                 Download CV
               </a>
 
-              <a href="#projects" class="btn secondary"> Ver Projetos </a>
+              <a href="#projects" class="btn btn-secondary"> Ver Projetos </a>
             </div>
           </div>
 
@@ -88,9 +121,224 @@
         </div>
       </section>
 
-      <section id="about"></section>
+      <section id="about">
+        <div class="section-title">
+          <span>01</span>
+          <h2>Sobre Mim</h2>
+        </div>
 
-      <section id="skills"></section>
+        <div class="about-card">
+          <div class="about-left">
+            <img
+              src="assets/images/profile/profile.png"
+              alt="Martim Mendes Simões"
+            />
+          </div>
+
+          <div class="about-right">
+            <h3>Quem sou eu?</h3>
+
+            <p>
+              Sou um programador recém-formado em Gestão e Programação de
+              Sistemas Informáticos, apaixonado pelo desenvolvimento de software
+              e pela resolução de problemas através da tecnologia. Tenho
+              experiência no desenvolvimento de aplicações desktop, aplicações
+              web e projetos pessoais de desenvolvimento de videojogos.
+            </p>
+
+            <p>
+              Ao longo do curso desenvolvi diversos projetos de software, desde
+              aplicações desktop em C# a aplicações web com Angular, Spring Boot
+              e MySQL, reforçando as minhas competências em desenvolvimento
+              full-stack.
+            </p>
+
+            <div class="about-highlights">
+              <div>C# & .NET</div>
+
+              <div>Angular & Spring Boot</div>
+
+              <div>Godot Engine</div>
+
+              <div>SQL & MySQL</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title">
+          <span>02</span>
+          <h2>Competências</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Software -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-laptop-code"></i>
+              Desenvolvimento de Software
+            </h3>
+
+            <div class="skill-items">
+              <div class="skill" style="--skill-color: #239120">
+                <i class="devicon-csharp-plain"></i>
+                <span>C#</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #ea2d2e">
+                <i class="devicon-java-plain"></i>
+                <span>Java</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #512bd4">
+                <i class="devicon-dotnetcore-plain"></i>
+                <span>.NET Framework</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #777bb4">
+                <i class="devicon-php-plain"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-globe"></i>
+              Desenvolvimento Web
+            </h3>
+
+            <div class="skill-items">
+              <div class="skill" style="--skill-color: #e34f26">
+                <i class="devicon-html5-plain"></i>
+                <span>HTML5</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #1572b6">
+                <i class="devicon-css3-plain"></i>
+                <span>CSS3</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #f7df1e">
+                <i class="devicon-javascript-plain"></i>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #3178c6">
+                <i class="devicon-typescript-plain"></i>
+                <span>TypeScript</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #dd0031">
+                <i class="devicon-angular-plain"></i>
+                <span>Angular</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #6db33f">
+                <i class="devicon-spring-plain"></i>
+                <span>Spring Boot</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bases de Dados -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-database"></i>
+              Bases de Dados
+            </h3>
+
+            <div class="skill-items">
+              <div class="skill" style="--skill-color: #4479a1">
+                <i class="devicon-mysql-plain"></i>
+                <span>MySQL</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #47a248">
+                <i class="devicon-mongodb-plain"></i>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ferramentas -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Ferramentas & Sistemas
+            </h3>
+
+            <div class="skill-items">
+              <div class="skill" style="--skill-color: #f05032">
+                <i class="devicon-git-plain"></i>
+                <span>Git</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #ffffff">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #2496ed">
+                <i class="devicon-docker-plain"></i>
+                <span>Docker</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #007acc">
+                <i class="devicon-vscode-plain"></i>
+                <span>VS Code</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #5c2d91">
+                <i class="devicon-visualstudio-plain"></i>
+                <span>Visual Studio</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #fe315d">
+                <i class="devicon-intellij-plain"></i>
+                <span>IntelliJ IDEA</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #e95420">
+                <i class="devicon-ubuntu-plain"></i>
+                <span>Ubuntu</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #0078d4">
+                <i class="devicon-windows11-original"></i>
+                <span>Windows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Dev -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-gamepad"></i>
+              Desenvolvimento de Jogos
+            </h3>
+
+            <div class="skill-items">
+              <div class="skill" style="--skill-color: #478cbf">
+                <i class="devicon-godot-plain"></i>
+                <span>Godot</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #f5792a">
+                <i class="devicon-blender-original"></i>
+                <span>Blender</span>
+              </div>
+
+              <div class="skill" style="--skill-color: #ffffff">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="projects"></section>
 
