@@ -1,17 +1,25 @@
-:root {
+:root{
 
-    --background: #0F172A;
+    --background:#0F172A;
 
-    --surface: #1E293B;
+    --surface:#1E293B;
 
-    --primary: #2563EB;
+    --surface-light:rgba(255,255,255,.05);
 
-    --secondary: #38BDF8;
+    --glass:rgba(255,255,255,.08);
 
-    --text: #F8FAFC;
+    --primary:#2563EB;
 
-    --text-secondary: #CBD5E1;
+    --secondary:#38BDF8;
 
-    --border: #334155;
+    --accent:#67E8F9;
+
+    --text:#F8FAFC;
+
+    --text-secondary:#CBD5E1;
+
+    --border:#334155;
+
+    --shadow:0 15px 40px rgba(0,0,0,.35);
 
 }
