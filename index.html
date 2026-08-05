@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/hero.css" />
     <link rel="stylesheet" href="assets/css/about.css" />
     <link rel="stylesheet" href="assets/css/skills.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +41,7 @@
     </div>
     <header>
       <nav class="navbar">
-        <a class="logo" href="#"> &lt;Martim /&gt; </a>
+        <a class="logo" href="#"> &lt;Martim.dev /&gt; </a>
 
         <ul class="nav-links">
           <li>
@@ -74,9 +76,9 @@
     <main>
       <section id="hero">
         <div class="hero-content">
-          <div class="hero-left">
+          <div class="hero-left from-left">
             <div class="hero-badge">
-              <i class="fa-solid fa-circle-check"></i>
+              <span class="status-dot"></span>
               Disponível para novas oportunidades
             </div>
 
@@ -84,7 +86,11 @@
 
             <h1>Martim Mendes Simões</h1>
 
-            <h2 id="typing-text">Junior Software Developer</h2>
+            <h2 id="typing-text">
+              Junior Software Developer
+              <span class="cursor">|</span>
+            </h2>
+            <div class="hero-line"></div>
 
             <p class="hero-description">
               Recém-formado em Gestão e Programação de Sistemas Informáticos,
@@ -93,32 +99,54 @@
             </p>
 
             <div class="hero-tech">
-              <span>C#</span>
-              <span>Angular</span>
-              <span>Spring Boot</span>
-              <span>TypeScript</span>
-              <span>Godot</span>
+              <span>
+                <i class="devicon-csharp-plain"></i>
+                C#
+              </span>
+              <span>
+                <i class="devicon-angular-plain"></i>
+                Angular
+              </span>
+              <span>
+                <i class="devicon-spring-plain"></i>
+                Spring Boot
+              </span>
+              <span>
+                <i class="devicon-typescript-plain"></i>
+                TypeScript
+              </span>
+              <span>
+                <i class="devicon-godot-plain"></i>
+                Godot
+              </span>
             </div>
 
             <div class="hero-buttons">
-              <a href="#" class="btn btn-primary">
+              <a
+                href="assets/files/CV_Martim_Mendes_Simoes.pdf"
+                class="btn btn-primary"
+                target="_blank"
+              >
                 <i class="fa-solid fa-download"></i>
-                Download CV
+                <span>Download CV</span>
               </a>
 
               <a href="#projects" class="btn btn-secondary">
                 <i class="fa-solid fa-folder-open"></i>
-                Ver Projetos
+                <span>Ver Projetos</span>
               </a>
             </div>
           </div>
 
-          <div class="hero-right">
-            <div class="hero-image">
-              <img
-                src="assets/images/profile/profile.png"
-                alt="Martim Mendes Simões"
-              />
+          <div class="hero-right from-right">
+            <div class="profile-card">
+              <div class="profile-image">
+                <div class="profile-ring"></div>
+                <img
+                  src="assets/images/profile/profile.png"
+                  alt="Martim Mendes Simões"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -130,7 +158,7 @@
           <h2>Sobre Mim</h2>
         </div>
 
-        <div class="about-card">
+        <div class="about-card from-left">
           <div class="about-left">
             <img
               src="assets/images/profile/profile.png"
@@ -180,7 +208,7 @@
 
         <div class="skills-grid">
           <!-- Software -->
-          <div class="skill-card">
+          <div class="skill-card stagger">
             <h3>
               <i class="fa-solid fa-laptop-code"></i>
               Desenvolvimento de Software
@@ -210,7 +238,7 @@
           </div>
 
           <!-- Web -->
-          <div class="skill-card">
+          <div class="skill-card stagger">
             <h3>
               <i class="fa-solid fa-globe"></i>
               Desenvolvimento Web
@@ -250,7 +278,7 @@
           </div>
 
           <!-- Bases de Dados -->
-          <div class="skill-card">
+          <div class="skill-card stagger">
             <h3>
               <i class="fa-solid fa-database"></i>
               Bases de Dados
@@ -270,7 +298,7 @@
           </div>
 
           <!-- Ferramentas -->
-          <div class="skill-card">
+          <div class="skill-card stagger">
             <h3>
               <i class="fa-solid fa-screwdriver-wrench"></i>
               Ferramentas & Sistemas
@@ -336,24 +364,118 @@
                 <i class="devicon-blender-original"></i>
                 <span>Blender</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div class="skill" style="--skill-color: #ffffff">
-                <i class="devicon-github-original"></i>
-                <span>GitHub</span>
+      <section id="projects">
+        <div class="section-title">
+          <span>03</span>
+          <h2>Projetos</h2>
+        </div>
+
+        <div class="projects-window reveal">
+          <aside class="projects-sidebar">
+            <button class="project-item active">
+              <i class="fa-solid fa-gamepad"></i>
+              VOIDZONE
+            </button>
+
+            <button class="project-item">
+              <i class="fa-solid fa-plane"></i>
+              Agência de Viagens
+            </button>
+
+            <button class="project-item">
+              <i class="fa-solid fa-server"></i>
+              Windows Server
+            </button>
+
+            <button class="project-item">
+              <i class="fa-solid fa-globe"></i>
+              Gestão de Filmes
+            </button>
+          </aside>
+
+          <div class="project-preview">
+            <div class="window-bar">
+              <div class="window-buttons">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+
+              <span class="window-title" id="window-title"></span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-left">
+                <span class="project-badge" id="project-type"></span>
+
+                <p id="project-description"></p>
+
+                <div class="project-tech" id="project-tech"></div>
+
+                <div class="project-buttons">
+                  <a id="github-btn" class="btn btn-primary" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-right">
+                <img id="project-image" src="" alt="Projeto" />
+
+                <iframe
+                  id="project-video"
+                  src=""
+                  title="Video do Projeto"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projects"></section>
-
       <section id="experience"></section>
 
       <section id="contact"></section>
     </main>
 
-    <footer></footer>
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/MINEGAMERPTyt" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/martim-simões-a9a2482b1"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:martimjorge75@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Martim Mendes Simões • Desenvolvido com HTML, CSS e JavaScript.
+      </div>
+    </footer>
 
     <script src="assets/js/main.js"></script>
   </body>

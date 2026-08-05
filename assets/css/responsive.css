@@ -1,0 +1,29 @@
+@media(max-width:900px){
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-brand p{
+
+        max-width:none;
+
+    }
+
+    .footer-links{
+
+        align-items:center;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+}
