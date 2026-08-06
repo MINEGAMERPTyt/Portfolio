@@ -139,6 +139,8 @@ section {
 
         0 10px 25px rgba(47,128,255,.35);
 
+    cursor: pointer;
+
 }
 
 .btn-primary:hover{
@@ -163,6 +165,8 @@ section {
 
     backdrop-filter:blur(20px);
 
+    cursor: pointer;
+
 }
 
 .btn-secondary:hover{
@@ -181,14 +185,14 @@ section {
 
 }
 
-/* ===== CURSOR PERSONALIZADO ===== */
+/* ===== CUSTOM CURSOR ===== */
 
-/* Cursor padrão para toda a página */
+/* Default cursor for the entire page */
 body {
   cursor: url('../cursors/NB_Arrow.cur'), auto;
 }
 
-/* Links, botões, elementos clicáveis */
+/* Links, buttons, clickable elements */
 a,
 button,
 .btn,
@@ -200,7 +204,7 @@ input[type="reset"],
   cursor: url('../cursors/NB_link.cur'), pointer;
 }
 
-/* Campos de texto e áreas editáveis */
+/* Text fields and editable areas */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -209,55 +213,55 @@ textarea,
   cursor: url('../cursors/NB_pen.cur'), text;
 }
 
-/* Estado de "ocupado" (ex: durante submissão de formulário) */
+/* Busy state (e.g. during form submission) */
 body.loading,
 button:disabled,
 .btn:disabled {
   cursor: url('../cursors/NB_Working.ani'), wait;
 }
 
-/* Ajuda (ex: tooltips) */
+/* Help (e.g. tooltips) */
 [data-help] {
   cursor: url('../cursors/NB_help.cur'), help;
 }
 
-/* Movimento (ex: arrastar) */
+/* Movement (e.g. drag) */
 .draggable {
   cursor: url('../cursors/NB_move.cur'), move;
 }
 
-/* Proibido (ex: elementos desativados) */
+/* Forbidden (e.g. disabled elements) */
 .disabled,
 [disabled] {
   cursor: url('../cursors/NB_no.cur'), not-allowed;
 }
 
-/* Redimensionamento horizontal (ew) */
+/* Horizontal resize (ew) */
 .resize-h {
   cursor: url('../cursors/NB_ew.cur'), ew-resize;
 }
 
-/* Redimensionamento vertical (ns) */
+/* Vertical resize (ns) */
 .resize-v {
   cursor: url('../cursors/NB_ns.cur'), ns-resize;
 }
 
-/* Redimensionamento diagonal (nesw) */
+/* Diagonal resize (nesw) */
 .resize-diag {
   cursor: url('../cursors/NB_nesw.cur'), nesw-resize;
 }
 
-/* Redimensionamento diagonal inversa (nwse) */
+/* Reverse diagonal resize (nwse) */
 .resize-diag-alt {
   cursor: url('../cursors/NB_nwse.cur'), nwse-resize;
 }
 
-/* Mira/precisão (crosshair) */
+/* Aim/precision (crosshair) */
 .crosshair {
   cursor: url('../cursors/NB_cross.cur'), crosshair;
 }
 
-/* Seleção (ex: em listas) */
+/* Selection (e.g. in lists) */
 .select {
   cursor: url('../cursors/NB_select.cur'), default;
 }

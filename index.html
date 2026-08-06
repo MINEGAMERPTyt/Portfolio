@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/projects.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/experience.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +38,7 @@
     />
   </head>
   <body>
+    <div id="progress-bar"></div>
     <div class="background">
       <div class="blob blob1"></div>
 
@@ -45,6 +47,12 @@
     <header>
       <nav class="navbar">
         <a class="logo" href="#"> &lt;Martim.dev /&gt; </a>
+
+        <button class="hamburger" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
 
         <ul class="nav-links">
           <li>
@@ -96,9 +104,8 @@
             <div class="hero-line"></div>
 
             <p class="hero-description">
-              Recém-formado em Gestão e Programação de Sistemas Informáticos,
-              apaixonado por tecnologia, desenvolvimento de software, aplicações
-              web e criação de videojogos.
+              Criador de soluções digitais &amp; entusiasta de jogos. Procuro a
+              minha primeira oportunidade profissional na área de informática.
             </p>
 
             <div class="hero-tech">
@@ -122,22 +129,6 @@
                 <i class="devicon-godot-plain"></i>
                 Godot
               </span>
-            </div>
-
-            <div class="hero-buttons">
-              <a
-                href="assets/files/CV_Martim_Mendes_Simoes.pdf"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="fa-solid fa-download"></i>
-                <span>Download CV</span>
-              </a>
-
-              <a href="#projects" class="btn btn-secondary">
-                <i class="fa-solid fa-folder-open"></i>
-                <span>Ver Projetos</span>
-              </a>
             </div>
           </div>
 
@@ -163,41 +154,74 @@
 
         <div class="about-card from-left">
           <div class="about-left">
-            <img
-              src="assets/images/profile/profile.png"
-              alt="Martim Mendes Simões"
-            />
+            <div class="about-image-wrapper">
+              <div class="about-image-glow"></div>
+              <img
+                src="assets/images/profile/profile2.png"
+                alt="Martim Mendes Simões"
+              />
+              <div class="about-image-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Lisboa, PT
+              </div>
+            </div>
           </div>
 
           <div class="about-right">
-            <h3>
-              <i class="fa-solid fa-user"></i>
-              Quem sou eu?
-            </h3>
+            <div class="about-header">
+              <h3>
+                <i class="fa-solid fa-user-astronaut"></i>
+                Quem sou eu?
+              </h3>
+              <span class="about-tag">Junior Developer</span>
+            </div>
 
             <p>
-              Sou um programador recém-formado em Gestão e Programação de
-              Sistemas Informáticos, apaixonado pelo desenvolvimento de software
-              e pela resolução de problemas através da tecnologia. Tenho
-              experiência no desenvolvimento de aplicações desktop, aplicações
-              web e projetos pessoais de desenvolvimento de videojogos.
+              Sou um programador recém-formado no curso profissional de Gestão e
+              Programação de Sistemas Informáticos, da Escola Secundária do
+              Forte da Casa, apaixonado por desenvolvimento de software,
+              aplicações web e criação de videojogos. Gosto de transformar
+              ideias em soluções funcionais e bem estruturadas.
             </p>
 
             <p>
-              Ao longo do curso desenvolvi diversos projetos de software, desde
-              aplicações desktop em C# a aplicações web com Angular, Spring Boot
-              e MySQL, reforçando as minhas competências em desenvolvimento
-              full-stack.
+              Ao longo do curso desenvolvi projetos que vão desde aplicações
+              desktop em C# até aplicações web com Angular, Spring Boot e MySQL,
+              consolidando uma base sólida em desenvolvimento full‑stack.
             </p>
 
             <div class="about-highlights">
-              <div>C# & .NET</div>
+              <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Curso Profissional<br /><small>Média 17/20</small></span>
+              </div>
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <span
+                  >Full-Stack<br /><small>Angular + Spring Boot</small></span
+                >
+              </div>
+              <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Game Dev<br /><small>Godot & Blender</small></span>
+              </div>
+              <div>
+                <i class="fa-solid fa-database"></i>
+                <span>Bases de Dados<br /><small>MySQL / MongoDB</small></span>
+              </div>
+            </div>
 
-              <div>Angular & Spring Boot</div>
-
-              <div>Godot Engine</div>
-
-              <div>SQL & MySQL</div>
+            <div class="about-extra">
+              <a
+                href="assets/files/CV_Martim_Mendes_Simoes.pdf"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fa-regular fa-paper-plane"></i> Contactar
+              </a>
             </div>
           </div>
         </div>
@@ -453,11 +477,94 @@
         </div>
       </section>
 
-      <section id="experience"></section>
+      <section id="experience">
+        <div class="section-title">
+          <span>04</span>
+          <h2>Experiência</h2>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experiência 1 -->
+          <div class="exp-item from-left stagger">
+            <div class="exp-header">
+              <span class="exp-date">
+                <i class="fa-regular fa-calendar"></i>
+                Abr 2026 - Jun 2026
+              </span>
+              <h3>Estagiário de Desenvolvimento de Software</h3>
+              <h4>
+                <i class="fa-regular fa-building"></i>
+                CMAS - Systems Consultants
+              </h4>
+            </div>
+            <div class="exp-body">
+              <ul>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Formações técnicas em Java, Spring Boot, Angular e TypeScript
+                  (Udemy).
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Desenvolvimento full-stack de uma aplicação interna de gestão
+                  de projetos e clientes.
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Tecnologias: Angular, TypeScript, HTML, CSS, SCSS, Java,
+                  Spring Boot, MySQL, Docker, Git.
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Ambiente colaborativo com equipa multidisciplinar.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experiência 2 -->
+          <div class="exp-item from-right stagger">
+            <div class="exp-header">
+              <span class="exp-date">
+                <i class="fa-regular fa-calendar"></i>
+                Jun 2025 - Jul 2025
+              </span>
+              <h3>Estagiário de Suporte Informático</h3>
+              <h4>
+                <i class="fa-regular fa-building"></i>
+                Agrupamento de Escolas de Santa Iria de Azóia
+              </h4>
+            </div>
+            <div class="exp-body">
+              <ul>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Manutenção e preparação de equipamentos: substituição HDD por
+                  SSD, instalação e configuração do Windows 10.
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Manutenção preventiva e reposição de fábrica dos equipamentos
+                  do Programa Escola Digital.
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Verificação de computadores e equipamentos de rede para provas
+                  nacionais.
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  Instalação de cablagem para sistemas de videovigilância.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact">
         <div class="section-title">
-          <span>04</span>
+          <span>05</span>
           <h2>Contacto</h2>
         </div>
 
@@ -468,8 +575,9 @@
             </div>
             <h3>Vamos trabalhar juntos?</h3>
             <p>
-              Se tiver interesse em colaborar ou discutir oportunidades, não hesite em entrar em contacto comigo. 
-              Estou sempre aberto a novas ideias e projetos.
+              Se tiver interesse em colaborar ou discutir oportunidades, não
+              hesite em entrar em contacto comigo. Estou sempre aberto a novas
+              ideias e projetos.
             </p>
           </div>
 
@@ -547,6 +655,8 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll.js"></script>
     <script src="assets/js/contact.js"></script>
   </body>
 </html>

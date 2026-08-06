@@ -1,3 +1,4 @@
+/* ===== CONTACT ===== */
 #contact {
   min-height: 100vh;
   padding: 120px 8%;
@@ -42,7 +43,7 @@
   max-width: 90%;
 }
 
-/* Formulário */
+/* ===== FORM ===== */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -128,7 +129,7 @@
   color: #ff6b6b;
 }
 
-/* Responsivo */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;

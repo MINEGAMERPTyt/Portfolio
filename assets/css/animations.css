@@ -1,155 +1,160 @@
-@keyframes fadeUp{
+/* ===== ANIMATIONS ===== */
 
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
+/* Fade Up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes rotateRing{
-
-    from{
-
-        transform:translate(-50%, -50%) rotate(0deg);
-
-    }
-
-    to{
-
-        transform:translate(-50%, -50%) rotate(360deg);
-
-    }
-
+/* Fade Up with scale (more modern) */
+@keyframes fadeUpScale {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-@keyframes blink{
-
-    50%{
-
-        opacity:0;
-
-    }
-
+/* Glitch effect (for titles) */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 #2f80ff, -2px 0 #6ee7ff;
+  }
+  25% {
+    text-shadow: -3px 0 #2f80ff, 3px 0 #6ee7ff;
+  }
+  50% {
+    text-shadow: 3px 0 #2f80ff, -3px 0 #6ee7ff;
+  }
+  75% {
+    text-shadow: -2px 0 #2f80ff, 2px 0 #6ee7ff;
+  }
+  100% {
+    text-shadow: 2px 0 #2f80ff, -2px 0 #6ee7ff;
+  }
 }
 
-@keyframes pulseDot{
-
-    50%{
-
-        transform:scale(1.4);
-
-        opacity:.6;
-
-    }
-
+/* Photo ring rotation */
+@keyframes rotateRing {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
-@keyframes shine{
-
-    0%{
-
-        left:-120%;
-
-    }
-
-    100%{
-
-        left:180%;
-
-    }
-
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
-@keyframes floatCard{
-
-    0%,100%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-8px);
-
-    }
-
+/* Status dot pulse */
+@keyframes pulseDot {
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
 }
 
-/* Estado inicial */
-
-.reveal{
-    opacity:0;
-    transform:translateY(40px);
-    transition:
-        opacity .8s ease,
-        transform .8s ease;
+/* Shine effect (sliding glow) */
+@keyframes shine {
+  0% {
+    left: -120%;
+  }
+  100% {
+    left: 180%;
+  }
 }
 
-.reveal.show{
-    opacity:1;
-    transform:translateY(0);
+/* Smooth card floating */
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
-/* Esquerda */
+/* ===== ANIMATION CLASSES ===== */
 
-.from-left{
-    opacity:0;
-    transform:translateX(-60px);
+/* Default reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.from-left.show{
-    opacity:1;
-    transform:translateX(0);
+/* Reveal with scale (more modern) */
+.reveal-scale {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-scale.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
-/* Direita */
-
-.from-right{
-    opacity:0;
-    transform:translateX(60px);
+/* Entry from the left */
+.from-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.from-left.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.from-right.show{
-    opacity:1;
-    transform:translateX(0);
+/* Entry from the right */
+.from-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.from-right.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-/* Cards */
-
-.stagger{
-    opacity:0;
-    transform:translateY(30px);
-    transition:
-        opacity .7s ease,
-        transform .7s ease;
+/* Staggered cards (with delay) */
+.stagger {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.stagger.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.stagger.show{
-    opacity:1;
-    transform:translateY(0);
+/* Glitch on titles (triggered on hover) */
+.glitch-hover {
+  transition: text-shadow 0.3s ease;
 }
-
-/* Botões */
-
-.btn{
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-}
-
-.btn:hover{
-    transform:translateY(-4px);
+.glitch-hover:hover {
+  animation: glitch 0.5s ease-in-out;
 }

@@ -185,49 +185,50 @@ buttons.forEach((button, index) => {
 loadProject(projects[0]);
 
 const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if(!entry.isIntersecting) return;
-
-        entry.target.classList.add("show");
-
-    });
-
-},{
-    threshold:0.15
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("show");
+  });
+}, {
+  threshold: 0.15
 });
 
 document.querySelectorAll(
-    ".reveal, .from-left, .from-right"
-).forEach(el=>observer.observe(el));
+  ".reveal, .from-left, .from-right"
+).forEach(el => observer.observe(el));
 
 const skillCards = document.querySelectorAll(".skill-card");
 
-const skillsObserver = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(!entry.isIntersecting) return;
-
-        skillCards.forEach((card,index)=>{
-
-            setTimeout(()=>{
-
-                card.classList.add("show");
-
-            },index*120);
-
-        });
-
+const skillsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    skillCards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add("show");
+      }, index * 120);
     });
-
-},{
-    threshold:.2
+  });
+}, {
+  threshold: 0.2
 });
 
-skillCards.forEach(card=>{
+skillCards.forEach(card => {
+  skillsObserver.observe(card);
+});
 
-    skillsObserver.observe(card);
+// Observe elements with the .reveal-scale class
+document.querySelectorAll('.reveal-scale').forEach(el => observer.observe(el));
 
+// ===== GLITCH ON TITLES =====
+const glitchElements = document.querySelectorAll('.section-title h2');
+glitchElements.forEach(el => {
+  el.classList.add('glitch-hover');
+});
+
+// ===== ADD HOVER EFFECT ON SKILL CARDS =====
+const skillCardsHover = document.querySelectorAll('.skill-card');
+skillCardsHover.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    this.style.transition = 'transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)';
+  });
 });

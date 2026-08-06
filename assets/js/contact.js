@@ -3,37 +3,37 @@
   const serviceID = "service_udcg97n";
   const templateID = "template_r2cdoff";
 
-  // Inicializa EmailJS com a chave pública
+  // Initialize EmailJS with the public key
   emailjs.init(publicKey);
 
   const form = document.getElementById("contact-form");
   const feedback = document.getElementById("form-feedback");
-  let timeoutId = null; // guarda o ID do timeout para poder cancelar
+  let timeoutId = null; // Stores the timeout ID to allow cancellation
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Cancela qualquer timeout anterior
+    // Cancel any previous timeout
     if (timeoutId) {
       clearTimeout(timeoutId);
       timeoutId = null;
     }
 
-    // Limpa feedback anterior
+    // Clear previous feedback
     feedback.className = "form-feedback";
     feedback.style.display = "none";
     feedback.textContent = "";
 
-    // Adiciona a classe de carregamento ao body
+    // Add loading class to body
     document.body.classList.add("loading");
 
-    // Mostra estado de carregamento no botão
+    // Show loading state on button
     const btn = form.querySelector('button[type="submit"]');
     const originalText = btn.innerHTML;
     btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> A enviar...';
     btn.disabled = true;
 
-    // Recolhe os dados do formulário
+    // Collect form data
     const formData = new FormData(form);
     const data = {
       user_name: formData.get("user_name"),
@@ -42,7 +42,7 @@
       message: formData.get("message"),
     };
 
-    // Envia via EmailJS
+    // Send via EmailJS
     emailjs
       .send(serviceID, templateID, data)
       .then(() => {
@@ -52,7 +52,7 @@
           '<i class="fa-regular fa-circle-check"></i> Mensagem enviada com sucesso! Entrarei em contacto brevemente.';
         form.reset();
 
-        // Agenda o desaparecimento da mensagem após 5 segundos
+        // Schedule message removal after 5 seconds
         timeoutId = setTimeout(() => {
           feedback.style.display = "none";
           timeoutId = null;
@@ -65,17 +65,17 @@
         feedback.innerHTML =
           '<i class="fa-regular fa-circle-xmark"></i> Ocorreu um erro ao enviar. Tenta novamente mais tarde.';
 
-        // Agenda o desaparecimento da mensagem após 5 segundos
+        // Schedule message removal after 5 seconds
         timeoutId = setTimeout(() => {
           feedback.style.display = "none";
           timeoutId = null;
         }, 5000);
       })
       .finally(() => {
-        // Restaura o botão
+        // Restore button
         btn.innerHTML = originalText;
         btn.disabled = false;
-        // Remove a classe de carregamento do body
+        // Remove loading class from body
         document.body.classList.remove('loading');
       });
   });
