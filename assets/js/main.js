@@ -31,7 +31,7 @@ const projects = [
         name: "Git",
       },
     ],
-    github: "#",
+    github: "https://github.com/MINEGAMERPTyt/voidzone",
   },
 
   {
