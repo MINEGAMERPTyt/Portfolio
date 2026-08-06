@@ -1,9 +1,11 @@
-<html>
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Martim Mendes Simões | Portfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/variables.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -15,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/skills.css" />
     <link rel="stylesheet" href="assets/css/projects.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -452,7 +455,73 @@
 
       <section id="experience"></section>
 
-      <section id="contact"></section>
+      <section id="contact">
+        <div class="section-title">
+          <span>04</span>
+          <h2>Contacto</h2>
+        </div>
+
+        <div class="contact-container reveal">
+          <div class="contact-info">
+            <div class="contact-icon">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <h3>Vamos trabalhar juntos?</h3>
+            <p>
+              Se tiver interesse em colaborar ou discutir oportunidades, não hesite em entrar em contacto comigo. 
+              Estou sempre aberto a novas ideias e projetos.
+            </p>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="user_name">Nome</label>
+              <input
+                type="text"
+                id="user_name"
+                name="user_name"
+                placeholder="O teu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="user_email">Email</label>
+              <input
+                type="email"
+                id="user_email"
+                name="user_email"
+                placeholder="exemplo@email.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Assunto da mensagem"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Escreve a tua mensagem..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-regular fa-paper-plane"></i>
+              Enviar Mensagem
+            </button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer id="footer">
@@ -478,5 +547,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>

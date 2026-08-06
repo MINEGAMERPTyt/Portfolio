@@ -116,6 +116,8 @@ section {
 
     transition:.35s;
 
+    cursor: pointer;
+
 }
 
 .btn-primary{
@@ -177,4 +179,85 @@ section {
 
     font-size:1rem;
 
+}
+
+/* ===== CURSOR PERSONALIZADO ===== */
+
+/* Cursor padrão para toda a página */
+body {
+  cursor: url('../cursors/NB_Arrow.cur'), auto;
+}
+
+/* Links, botões, elementos clicáveis */
+a,
+button,
+.btn,
+input[type="submit"],
+input[type="reset"],
+.project-item,
+.nav-links a,
+.logo {
+  cursor: url('../cursors/NB_link.cur'), pointer;
+}
+
+/* Campos de texto e áreas editáveis */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+[contenteditable="true"] {
+  cursor: url('../cursors/NB_pen.cur'), text;
+}
+
+/* Estado de "ocupado" (ex: durante submissão de formulário) */
+body.loading,
+button:disabled,
+.btn:disabled {
+  cursor: url('../cursors/NB_Working.ani'), wait;
+}
+
+/* Ajuda (ex: tooltips) */
+[data-help] {
+  cursor: url('../cursors/NB_help.cur'), help;
+}
+
+/* Movimento (ex: arrastar) */
+.draggable {
+  cursor: url('../cursors/NB_move.cur'), move;
+}
+
+/* Proibido (ex: elementos desativados) */
+.disabled,
+[disabled] {
+  cursor: url('../cursors/NB_no.cur'), not-allowed;
+}
+
+/* Redimensionamento horizontal (ew) */
+.resize-h {
+  cursor: url('../cursors/NB_ew.cur'), ew-resize;
+}
+
+/* Redimensionamento vertical (ns) */
+.resize-v {
+  cursor: url('../cursors/NB_ns.cur'), ns-resize;
+}
+
+/* Redimensionamento diagonal (nesw) */
+.resize-diag {
+  cursor: url('../cursors/NB_nesw.cur'), nesw-resize;
+}
+
+/* Redimensionamento diagonal inversa (nwse) */
+.resize-diag-alt {
+  cursor: url('../cursors/NB_nwse.cur'), nwse-resize;
+}
+
+/* Mira/precisão (crosshair) */
+.crosshair {
+  cursor: url('../cursors/NB_cross.cur'), crosshair;
+}
+
+/* Seleção (ex: em listas) */
+.select {
+  cursor: url('../cursors/NB_select.cur'), default;
 }
