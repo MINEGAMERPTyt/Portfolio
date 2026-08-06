@@ -97,7 +97,7 @@ Portfolio/
    ```
 3. Open `index.html` in your browser (double-click or use Live Server in VS Code).
 
-No build step or dependencies required – it's pure static HTML/CSS/JS.
+No build step or dependencies required, it's pure static HTML/CSS/JS.
 
 ---
 
