@@ -10,7 +10,6 @@
 ## 🌐 Live Website
 
 👉 [**martim-portfolio.netlify.app**](https://martim-portfolio.netlify.app)  
-_(update with your actual deployed URL)_
 
 ---
 
@@ -29,12 +28,12 @@ This is a **modern, responsive, and fully static portfolio** designed to present
 
 ## 🛠️ Built With
 
-- **HTML5** – semantic markup
-- **CSS3** – custom properties, flexbox, grid, animations
-- **JavaScript (ES6)** – DOM manipulation, event handling, EmailJS integration
-- **EmailJS** – client-side email sending without a backend
-- **Font Awesome & Devicon** – icon libraries
-- **Google Fonts** – Inter typeface
+- **HTML5** - semantic markup
+- **CSS3** - custom properties, flexbox, grid, animations
+- **JavaScript (ES6)** - DOM manipulation, event handling, EmailJS integration
+- **EmailJS** - client-side email sending without a backend
+- **Font Awesome & Devicon** - icon libraries
+- **Google Fonts** - Inter typeface
 
 ---
 
@@ -76,13 +75,13 @@ Portfolio/
 
 ## 🔧 Features
 
-- **Responsive navigation** – collapsible hamburger menu on mobile
-- **Scroll progress bar** – visual indicator at the top of the page
-- **Parallax effect** – subtle movement on the hero section
-- **Dynamic project viewer** – click a project to see details, tech stack, and preview
-- **EmailJS contact form** – sends messages directly to my inbox with feedback messages
-- **Custom cursors** – consistent and themed cursor experience
-- **Smooth reveal animations** – elements fade and slide in as you scroll
+- **Responsive navigation** - collapsible hamburger menu on mobile
+- **Scroll progress bar** - visual indicator at the top of the page
+- **Parallax effect** - subtle movement on the hero section
+- **Dynamic project viewer** - click a project to see details, tech stack, and preview
+- **EmailJS contact form** - sends messages directly to my inbox with feedback messages
+- **Custom cursors** - consistent and themed cursor experience
+- **Smooth reveal animations** - elements fade and slide in as you scroll
 
 ---
 
@@ -115,22 +114,22 @@ If you'd like to collaborate, have any questions, or just want to say hello:
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).  
-You are free to use, modify, and distribute it – but please keep the original credits.
+You are free to use, modify, and distribute it - but please keep the original credits.
 
 ---
 
 ## 🙌 Acknowledgements
 
-- [EmailJS](https://www.emailjs.com/) – for the contact form service
-- [Font Awesome](https://fontawesome.com/) – icons
-- [Devicon](https://devicon.dev/) – technology icons
-- [Google Fonts](https://fonts.google.com/) – Inter font
+- [EmailJS](https://www.emailjs.com/) - for the contact form service
+- [Font Awesome](https://fontawesome.com/) - icons
+- [Devicon](https://devicon.dev/) - technology icons
+- [Google Fonts](https://fonts.google.com/) - Inter font
 
 ---
 
 ## ✨ About the Developer
 
-I'm a junior software developer passionate about building clean, functional, and beautiful digital experiences. This portfolio is a reflection of my journey so far – and I'm always learning and improving.
+I'm a junior software developer passionate about building clean, functional, and beautiful digital experiences. This portfolio is a reflection of my journey so far - and I'm always learning and improving.
 
 ---
 
