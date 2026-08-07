@@ -1,5 +1,10 @@
 # Martim Mendes Simões – Portfolio
 
+[![GitHub repo size](https://img.shields.io/github/repo-size/MINEGAMERPTyt/portfolio?style=flat-square)](https://github.com/MINEGAMERPTyt/portfolio)
+[![GitHub last commit](https://img.shields.io/github/last-commit/MINEGAMERPTyt/portfolio?style=flat-square)](https://github.com/MINEGAMERPTyt/portfolio)
+[![GitHub language count](https://img.shields.io/github/languages/count/MINEGAMERPTyt/portfolio?style=flat-square)](https://github.com/MINEGAMERPTyt/portfolio)
+[![GitHub top language](https://img.shields.io/github/languages/top/MINEGAMERPTyt/portfolio?style=flat-square)](https://github.com/MINEGAMERPTyt/portfolio)
+
 > Personal portfolio website built with HTML, CSS, and JavaScript.  
 > Showcases my skills, projects, and professional experience as a junior software developer.
 
@@ -7,13 +12,13 @@
 
 ---
 
-## 🌐 Live Website
+## Live Website
 
-👉 [**martimsimoes-portfolio.netlify.app**](https://martimsimoes-portfolio.netlify.app)  
+[**martimsimoes-portfolio.netlify.app**](https://martimsimoes-portfolio.netlify.app)
 
 ---
 
-## 📖 About This Project
+## About This Project
 
 This is a **modern, responsive, and fully static portfolio** designed to present my work, technical skills, and professional background. It was built from scratch with a focus on:
 
@@ -26,18 +31,17 @@ This is a **modern, responsive, and fully static portfolio** designed to present
 
 ---
 
-## 🛠️ Built With
+## Built With
 
-- **HTML5** - semantic markup
-- **CSS3** - custom properties, flexbox, grid, animations
-- **JavaScript (ES6)** - DOM manipulation, event handling, EmailJS integration
-- **EmailJS** - client-side email sending without a backend
-- **Font Awesome & Devicon** - icon libraries
-- **Google Fonts** - Inter typeface
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![EmailJS](https://img.shields.io/badge/-EmailJS-FF6B6B?style=flat-square)
+![Font Awesome](https://img.shields.io/badge/-Font%20Awesome-528DD7?style=flat-square&logo=font-awesome&logoColor=white)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Portfolio/
@@ -59,7 +63,7 @@ Portfolio/
 │   ├── files/
 │   │   └── CV_Martim_Mendes_Simoes.pdf
 │   ├── images/
-│   │   ├── profile/
+│   │   ├── profile/          # Profile pictures
 │   │   └── projects/         # Project screenshots
 │   └── js/
 │       ├── main.js           # Core logic (projects, observers)
@@ -73,7 +77,7 @@ Portfolio/
 
 ---
 
-## 🔧 Features
+## Features
 
 - **Responsive navigation** - collapsible hamburger menu on mobile
 - **Scroll progress bar** - visual indicator at the top of the page
@@ -85,7 +89,7 @@ Portfolio/
 
 ---
 
-## 🧪 How to Run Locally
+## How to Run Locally
 
 1. Clone the repository:
    ```bash
@@ -97,39 +101,39 @@ Portfolio/
    ```
 3. Open `index.html` in your browser (double-click or use Live Server in VS Code).
 
-No build step or dependencies required, it's pure static HTML/CSS/JS.
+No build step or dependencies required – it's pure static HTML/CSS/JS.
 
 ---
 
-## 📬 Contact
+## Contact
 
 If you'd like to collaborate, have any questions, or just want to say hello:
 
 - **Email**: [martimjorge75@gmail.com](mailto:martimjorge75@gmail.com)
-- **LinkedIn**: [Martim Simões](https://linkedin.com/in/martim-simões-a9a2482b1)
+- **LinkedIn**: [Martim Simões](https://linkedin.com/in/martim-simoes-a9a2482b1)
 - **GitHub**: [MINEGAMERPTyt](https://github.com/MINEGAMERPTyt)
 
 ---
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).  
-You are free to use, modify, and distribute it - but please keep the original credits.
+You are free to use, modify, and distribute it – but please keep the original credits.
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
-- [EmailJS](https://www.emailjs.com/) - for the contact form service
-- [Font Awesome](https://fontawesome.com/) - icons
-- [Devicon](https://devicon.dev/) - technology icons
-- [Google Fonts](https://fonts.google.com/) - Inter font
+- [EmailJS](https://www.emailjs.com/) – for the contact form service
+- [Font Awesome](https://fontawesome.com/) – icons
+- [Devicon](https://devicon.dev/) – technology icons
+- [Google Fonts](https://fonts.google.com/) – Inter font
 
 ---
 
-## ✨ About the Developer
+## About the Developer
 
-I'm a junior software developer passionate about building clean, functional, and beautiful digital experiences. This portfolio is a reflection of my journey so far - and I'm always learning and improving.
+I'm a junior software developer passionate about building clean, functional, and beautiful digital experiences. This portfolio is a reflection of my journey so far – and I'm always learning and improving.
 
 ---
 
